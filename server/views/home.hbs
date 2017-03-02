@@ -1,0 +1,13 @@
+<h1>Welcome Animal Calls</h1>
+
+
+<!-- action when submit hit sends it where we tell it to and method is app.post-->
+<form action="/tweets" method="POST">
+	<input type="text" name="tweet" placeholder="what's happening?"> 
+	<!-- placeholder puts texts inside the input -->
+	<input type="submit" value="Submit">
+</form>
+
+{{#each tweetsArray}}
+	{{this}}
+{{/each}}
